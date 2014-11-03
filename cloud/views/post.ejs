@@ -32,23 +32,23 @@
 
     <div class="content pure-u-1 pure-u-md-3-4">
         <div>
-            <div class="posts">
-                <section class="post">
-                    <header class="post-header">
-                        <h2 class="post-title"><%=title%></h2>
+            <form class="pure-form pure-form-stacked" method="post">
+				<fieldset>
+					<legend>Post Form</legend>
 
-                        <p class="post-meta">
-                            On <a href="#" class="post-author"><%=createdAt%></a> Under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
-                        </p>
-                    </header>
-                    <div class="post-description">
-                       <%=content%>
-                    </div>
-                </section>
-            </div>
-			<ul>
-				
-			</ul>
+					<label for="title">title</label>
+					<input id="title" name="title" placeholder="post title" value="<%=title%>">
+					<input name="id" type="hidden" value="<%=id%>">
+
+					<label for="tags">tags</label>
+					<input id="tags" name="tags" placeholder="tags: java, doc" value="<%=tags%>">
+					
+					<label for="content">content</label>
+					<textarea id="content" name="content" placeholder="post content"><%=content%></textarea>
+
+					<button type="submit" class="pure-button pure-button-primary">Save</button>
+				</fieldset>
+			</form>
         </div>
     </div>
 </div>
