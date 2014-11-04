@@ -1,8 +1,8 @@
 {
     "applications": {
         "ITCareer": {
-            "applicationId": "TCv0CzC3BLlwM2C6YsPvpjMWZn7P0Usei3bUL4On", 
-            "masterKey": "cLZzWog3z4g9aDwdjcXfQv9uzH7ZCCk1T136Oyb6"
+            "applicationId": "eFie6xn5R6mJnplBBBYOMBQsfEi0JDgMwIqFbnWR", 
+            "masterKey": "2U9oW0nqW3laGxlHwhJ44JI841z91BqqsapDHgn6"
         }, 
         "_default": {
             "link": "ITCareer"
