@@ -5,15 +5,13 @@
                         <h2 class="post-title"><%= title %></h2>
 
                         <p class="post-meta">
-                            On <a href="#" class="post-author"><%= createdAt %></a> <%= (tags ? 'Under' : '') %> 
+                            <span class="post-time"><%= formatDate(createdAt) %></span> <%= (tags ? 'About' : '') %> 
 								<% tags && _.each(tags, function(tag){%>
 									<a class="post-category post-category-design" href="#"><%= tag %></a> 
 								<%})%>
                         </p>
                     </header>
-                    <div class="post-description">
-                       <%= content %>
-                    </div>
+                    <pre class="post-description"><%- content %></pre>
                 </section>
 				
 				<p>All Posts</p>

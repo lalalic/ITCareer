@@ -4,16 +4,17 @@
 					<legend>Post Form</legend>
 
 					<label for="title">title</label>
-					<input id="title" name="title" placeholder="post title" value="<%=title%>">
+					<input id="title" style="width:100%" name="title" placeholder="post title" value="<%=title%>">
 					<input name="objectId" type="hidden" value="<%=objectId%>">
 
 					<label for="tags">tags</label>
-					<input id="tags" name="tags" placeholder="tags: java, doc" value="<%=tags||''%>">
+					<input id="tags" style="width:100%" name="tags" placeholder="tags: java, doc" value="<%=tags||''%>">
 					
 					<label for="content">content</label>
-					<textarea id="content" name="content" placeholder="post content"><%=content%></textarea>
+					<textarea id="content" style="width:100%; min-height:500px" name="content" placeholder="post content"><%=content%></textarea>
 
 					<button type="submit" class="pure-button pure-button-primary">Save</button>
+					<% if(objectId){%><a target="preview" href="<%=encodeURI(title)%>.html">Preview</a><%}%>
 				</fieldset>
 			</form>
 <% include footer%>
